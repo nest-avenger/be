@@ -9,6 +9,7 @@ async function bootstrap() {
     .setTitle('Andalin API')
     .setDescription('Ini dokumentasi api Andalin')
     .setVersion('1.0.0')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
